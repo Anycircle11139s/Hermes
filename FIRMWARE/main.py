@@ -13,7 +13,7 @@ from kmk.modules.encoder import EncoderHandler
 keyboard = KMKKeyboard()
 is_bright = True  # Track the current brightness state
 
-# 2. Rotary Encoder Setup (D0, D1, D2) 
+# 2. Rotary Encoder Setup 
 encoder_handler = EncoderHandler()
 keyboard.modules.append(encoder_handler)
 encoder_handler.pins = ((board.D0, board.D1, board.D2, False),)
@@ -49,7 +49,6 @@ def toggle_brightness():
 # 5. Main Loop 
 def update_system(keyboard):
     # Check if encoder button (D2) is pressed to toggle brightness
-    # KMK handles keys, but for a direct toggle we check the sensor periodically
     try:
         temp = sensor.temperature
         bright_status = "High" if is_bright else "Low"
