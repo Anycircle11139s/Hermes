@@ -24,3 +24,41 @@ I spent the most time on the BOM because getting all the parts under $25 USD was
 |Ec11 rotary encoder      |so i can change brightness of oled to prevent burn in|1       |1.47            |https://www.aliexpress.com/item/1005006693443387.html?mp=1&pdp_npi=6@dis!USD!USD%201.47!USD%200.99!!USD%200.99!!!@210328df17757913589444878e58cd!12000048311239365!ct!AU!7513952212!!1!0!|ali express|
 |LM75AD,118               |Temperature sensor                                   |1       |0.71            |https://www.digikey.com/en/products/detail/nxp-usa-inc/LM75ADP-118/1156588                                                                                                               |Digikey    |
 |PCB creating and shipping|For pcb                                              |1       |5.50            |                                                                                                                                                                                         |JLCPCB     |
+
+
+Building the thing:
+Once I recieved all the parts, I started soldering, I tried normally soldering the LM75AD sensor without flux, but the pads kept bridging, so I applied flux. Since I didn't/don't have a solder wick, it was slightly harder, but I seperated all the bridges by flicking the soldering iron in a way that broke the bridges. Once the sensor was soldered on, I moved on to the rotary encoder, it was pretty simple, but my soldering was pretty bad on it. Then, I moved on to the oled, with only 4 pins, it was really easy, I just had to make sure it was in the correct position before I soldered it. Next, I soldered the headers to the rp2040 and soldered it onto the PCB. This was my favourite part because I find it extremely satisfying to solder the pins on microcontrollers. Lastly, I soldered on the resistors. The resistors were kind of weird, because the hole distance is a lot smaller than the actual resistors, so I had to squeeze them in. Once I had finished soldering, I moved on to the code. I got my intitial code, uploaded it, uploaded the drivers or whatever its called and ran the code from thonny. Originally it didn't work becayse the oled screen was set to 64 as the y axis height instead of 32. Then I had to do some random other trouble shooting because the screen was upside down and some other stuff, but after a while, it finally worked.
+
+
+
+https://github.com/user-attachments/assets/9b167287-3994-496b-82d9-43ea8c0a6dbe
+
+
+
+https://github.com/user-attachments/assets/fa248c13-c449-4ee9-a2be-12438f792acb
+
+
+
+https://github.com/user-attachments/assets/527572af-bf87-4742-be0e-cb3ad4938c7c
+
+
+
+https://github.com/user-attachments/assets/440db2dd-6235-4dd3-aeeb-82b491f24ae7
+
+
+
+https://github.com/user-attachments/assets/d056f70a-cc38-4e82-8550-2bf955608510
+
+
+
+https://github.com/user-attachments/assets/0cdc1f9a-8a88-437c-a1f9-4a4462cc4919
+
+<img width="1500" height="2000" alt="WhatsApp Image 2026-05-13 at 17 36 07" src="https://github.com/user-attachments/assets/882c2904-117a-434d-8cfa-7e1fa9fe9167" />
+<img width="1500" height="2000" alt="WhatsApp Image 2026-05-13 at 17 36 07 (2)" src="https://github.com/user-attachments/assets/35bb93ab-fd39-4369-9b24-b09d26f4e4a5" />
+<img width="2000" height="1500" alt="WhatsApp Image 2026-05-13 at 17 36 07 (1)" src="https://github.com/user-attachments/assets/6714c870-cae7-43e1-b95e-1d10522bf912" />
+<img width="2048" height="1466" alt="WhatsApp Image 2026-05-13 at 17 36 06" src="https://github.com/user-attachments/assets/334d3009-7c12-42a3-95ec-399bbc13fbbc" />
+<img width="1920" height="1536" alt="WhatsApp Image 2026-05-13 at 17 36 06 (1)" src="https://github.com/user-attachments/assets/7c775fcc-1a80-4be9-92ee-c35b67f69378" />
+<img width="1500" height="2000" alt="WhatsApp Image 2026-05-13 at 17 36 05" src="https://github.com/user-attachments/assets/5e55421d-ddad-4f77-bd9a-54db4e4945de" />
+<img width="1500" height="2000" alt="WhatsApp Image 2026-05-13 at 17 35 53" src="https://github.com/user-attachments/assets/895da207-2ac2-441a-aa14-45496550d7cd" />
+<img width="1500" height="2000" alt="WhatsApp Image 2026-05-13 at 17 35 53 (2)" src="https://github.com/user-attachments/assets/e3e1a748-7658-4fc2-b85b-a675ddd0167f" />
+<img width="1500" height="2000" alt="WhatsApp Image 2026-05-13 at 17 35 53 (1)" src="https://github.com/user-attachments/assets/36d32798-4892-4759-8d06-14f6e183f0dc" />
